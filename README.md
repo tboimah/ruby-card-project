@@ -23,7 +23,7 @@ Before running the project, ensure that you have **Ruby** installed. You can dow
 
 Change into the directory that was created when you cloned the repository:
 
-cd ruby-card-project
+    cd ruby-card-project
 
 Run the Ruby file:
 
@@ -36,22 +36,22 @@ Create a new Card
 
 To create a new card, instantiate the Card class with a rank and suit:
 
-card = Card.new('Ace', 'Spades')
-puts card.display  # Output: Ace of Spades
+    card = Card.new('Ace', 'Spades')
+    puts card.display  # Output: Ace of Spades
 
 This will create a card with the rank Ace and the suit Spades. The display method will output the card in the format: Ace of Spades.
 Comparing Cards
 
 You can compare two cards based on their rank (and suit if the ranks are equal):
 
-card1 = Card.new('Ace', 'Spades')
-card2 = Card.new('King', 'Hearts')
+    card1 = Card.new('Ace', 'Spades')
+    card2 = Card.new('King', 'Hearts')
 
-if card1 > card2
-  puts "#{card1.display} is greater than #{card2.display}"
-else
-  puts "#{card2.display} is greater than #{card1.display}"
-end
+    if card1 > card2
+      puts "#{card1.display} is greater than #{card2.display}"
+    else
+      puts "#{card2.display} is greater than #{card1.display}"
+    end
 
 This compares the two cards based on their rank. If their ranks are the same, it compares their suits.
 Features
